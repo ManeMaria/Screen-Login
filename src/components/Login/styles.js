@@ -72,6 +72,7 @@ export const RelembreMeAndForgotPassword = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     input{
        display: none;
     }
@@ -81,6 +82,7 @@ export const RelembreMeAndForgotPassword = styled.div`
     }
     label{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         width: 45%;
         position: relative;

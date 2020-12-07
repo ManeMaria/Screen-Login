@@ -10,25 +10,29 @@ export default createGlobalStyle`
     outline: none;
     box-sizing: border-box;
     background: #48d1cc ;//linear-gradient(-45deg,#48d1cc,#20b2aa, #00ced1, #008b8b);
-    animation: trans 3s linear infinite 3s;
+    animation: trans 10s linear infinite 3s;
    
     @keyframes trans{
        0%{
         background: #48d1cc;
        }
       
-       25%{
+       20%{
         background: #00ced1;
        }
-       50%{
+       40%{
         background: #20b2aa;
        }
        
-       75%{
+       60%{
         background: #008b8b;
     } 
-       100%{
+       80%{
         background:  #006b6b;
+       }
+
+       100%{
+         background: #48d1cc;
        }
     }
 
