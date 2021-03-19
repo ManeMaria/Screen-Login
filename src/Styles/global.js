@@ -9,30 +9,30 @@ export default createGlobalStyle`
     width: 100%;
     outline: none;
     box-sizing: border-box;
-    background: #48d1cc ;//linear-gradient(-45deg,#48d1cc,#20b2aa, #00ced1, #008b8b);
-    animation: trans 10s linear infinite 3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg,#48d1cc, #00ced1,#20b2aa, #008b8b) no-repeat;
+    background-size: 300% 300%;
+    animation: gradient 5s ease infinite;
    
-    @keyframes trans{
+    @keyframes gradient{
        0%{
-        background: #48d1cc;
+        background-position: 0% 50%;
        }
       
-       20%{
-        background: #00ced1;
+       25%{
+        background-position: 50% 100%;
        }
-       40%{
-        background: #20b2aa;
+       50%{
+        background-position: 100% 0%;
        }
        
-       60%{
-        background: #008b8b;
+       75%{
+        background-position: 0% 50%;
     } 
-       80%{
-        background:  #006b6b;
-       }
-
        100%{
-         background: #48d1cc;
+        background-position:  50% 100%;
        }
     }
 
